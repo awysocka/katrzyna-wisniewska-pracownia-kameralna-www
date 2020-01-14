@@ -8,11 +8,14 @@
 
     &__bar {
         width: 100vw;
+        height: 80px;
         background-color: $color-black;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: $space-m;
+        position: fixed;
+        z-index: 102; 
 
         .logotyp {
             width: 120px;
@@ -20,21 +23,21 @@
     }
 
     &__menu {
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
         width: 250px;
-        height: 90vh;
-        margin-left: auto;
         background-color: $color-pink;
         transform: translateX(250px);
         transition: .5s ease; 
-        position: fixed;
-        left: 130px;
-         
+        z-index: 101;   
     }
 
     &__list {
         list-style-type: none;
         text-transform: uppercase;
-        padding: 20px;
+        padding: 80px 10px;
     }
 
     &__item {
@@ -52,8 +55,11 @@
 }
 
 .nav__menu--active {
-    transform: translateX(0px);
+    transform: translateX(0px);  
 }
+
+
+
 
 // HAMBURGER
 
@@ -61,7 +67,7 @@
     padding: 10px;
     display: inline-block;
     cursor: pointer;
-    background-color: $color-black;
+    background-color: transparent;
     border: none;
     border-radius: 5px;
 }

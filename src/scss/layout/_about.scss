@@ -6,6 +6,7 @@
 
     &__img {
         width: 85vw;
+        max-width: 350px;
         margin: $space-m 0;
     }
 
@@ -18,5 +19,7 @@
 
     .paragraph--about {
         text-align: center;
+        margin: 0 auto;
+        max-width: 730px;
     }
 }

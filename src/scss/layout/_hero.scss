@@ -1,6 +1,7 @@
 //HERO
 
 .hero {
+    margin-top: $space-m;
 
     &__container {
         display: flex;
@@ -8,6 +9,7 @@
     }
 
     &__img {
-        width: 90vw;
+        width: 100%;
+        max-width: 1120px;
     }
 }

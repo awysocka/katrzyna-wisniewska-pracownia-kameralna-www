@@ -1,6 +1,6 @@
 //SERVICE
 .service {
-    margin-top: $space-m;
+    margin-top: $space-m*2;
     
 
     .heading-primary {
@@ -28,10 +28,13 @@
         justify-content: space-between;
         text-align: center;
         list-style-type: none;
+        margin-top: $space-m;
     }
 
+
     &__img {
-        width: 85vw;
+        width: 60vw;
+        max-width: 550px;
         margin: $space-m 0;
     }
 
@@ -43,6 +46,8 @@
     }
 
     .paragraph--service {
+        margin: 0 auto;
+        max-width: 400px;
         font-size: $font-s;
         color: $color-brown;
         line-height: 1.2;

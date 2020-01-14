@@ -1,0 +1,111 @@
+//NAVIGATION 
+
+.header {
+    overflow: hidden;
+}
+
+.nav {
+
+    &__bar {
+        width: 100vw;
+        background-color: $color-black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $space-m;
+
+        .logotyp {
+            width: 120px;
+        }
+    }
+
+    &__menu {
+        width: 250px;
+        height: 90vh;
+        margin-left: auto;
+        background-color: $color-pink;
+        transform: translateX(250px);
+        transition: .5s ease; 
+         
+    }
+
+    &__list {
+        list-style-type: none;
+        text-transform: uppercase;
+        padding: 20px;
+    }
+
+    &__item {
+        margin: $space-m;
+        padding: 5px 0;
+        
+    }
+
+    &__link {
+        cursor: pointer;
+        text-decoration: none;
+        color: $color-brown;
+        font-size: $font-m;
+    }       
+}
+
+.nav__menu--active {
+    transform: translateX(0px);
+}
+
+// HAMBURGER
+
+.hamburger {
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: $color-black;
+    border: none;
+    border-radius: 5px;
+}
+
+.hamburger__box {
+    width: 40px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+}
+
+.hamburger__inner {
+    @include hamburger__line;
+
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color .1s .2s ease-in-out;
+}
+
+.hamburger__inner::before,
+.hamburger__inner::after {
+    @include hamburger__line;
+
+    content: "";
+    left: 0;
+    transition: transform .3s ease-in-out;
+}
+
+.hamburger__inner::before {
+    top: -10px;
+}
+
+.hamburger__inner::after {
+    top: 10px;
+}
+
+.hamburger--active .hamburger__inner {
+    background-color: transparent;
+}
+
+.hamburger--active .hamburger__inner::before {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger--active .hamburger__inner::after {
+    transform: translateY(-10px) rotate(-45deg);
+}

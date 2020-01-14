@@ -26,6 +26,8 @@
         background-color: $color-pink;
         transform: translateX(250px);
         transition: .5s ease; 
+        position: fixed;
+        left: 130px;
          
     }
 
@@ -109,3 +111,7 @@
 .hamburger--active .hamburger__inner::after {
     transform: translateY(-10px) rotate(-45deg);
 }
+
+
+
+

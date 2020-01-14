@@ -1,0 +1,53 @@
+//SERVICE
+.service {
+    margin-top: $space-m;
+    
+
+    .heading--primary {
+        text-align: center;
+        margin: 0;
+
+        .subslogan {
+            display: block;
+            font-size: $font-m;
+            font-weight: 400;
+            color: $color-brown;
+        }
+
+        .slogan {
+            font-size: $font-l;
+            color: $color-blue;
+            text-transform: uppercase;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        list-style-type: none;
+    }
+
+    &__img {
+        width: 85vw;
+        margin: $space-m 0;
+    }
+
+    .heading--secondary {
+        text-transform: uppercase;
+        color: $color-gold;
+        font-size: $font-m;
+        margin-bottom: $space-s;
+    }
+
+    .paragraph--service {
+        font-size: $font-s;
+        color: $color-brown;
+        line-height: 1.2;
+        
+    }
+
+
+}

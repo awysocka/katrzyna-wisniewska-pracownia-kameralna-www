@@ -7,7 +7,7 @@
 }
 
 html {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     color: $color-brown;
     scroll-behavior: smooth;
@@ -16,4 +16,8 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     background-color: $color-white;
+}
+
+.content {
+    padding: $space-m;
 }

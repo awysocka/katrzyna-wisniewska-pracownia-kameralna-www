@@ -1,0 +1,14 @@
+.copyright {
+    background-color: $color-brown;
+    color: $color-light-brown;
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.4;
+    padding:$space-s $space-m;
+
+    a:link,
+    a:visited {
+        color: $color-light-brown;
+        text-decoration: none;
+    }
+}

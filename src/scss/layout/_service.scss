@@ -1,25 +1,6 @@
 //SERVICE
 .service {
     margin-top: $space-m*2;
-    
-
-    .heading-primary {
-        text-align: center;
-        margin: 0;
-
-        .subslogan {
-            display: block;
-            font-size: $font-m;
-            font-weight: 400;
-            color: $color-brown;
-        }
-
-        .slogan {
-            font-size: $font-l;
-            color: $color-blue;
-            text-transform: uppercase;
-        }
-    }
 
     &__list {
         display: flex;
@@ -31,28 +12,9 @@
         margin-top: $space-m;
     }
 
-
     &__img {
         width: 60vw;
         max-width: 550px;
         margin: $space-m 0;
     }
-
-    .heading-secondary {
-        text-transform: uppercase;
-        color: $color-gold;
-        font-size: $font-m;
-        margin-bottom: $space-s;
-    }
-
-    .paragraph--service {
-        margin: 0 auto;
-        max-width: 400px;
-        font-size: $font-s;
-        color: $color-brown;
-        line-height: 1.2;
-        
-    }
-
-
 }

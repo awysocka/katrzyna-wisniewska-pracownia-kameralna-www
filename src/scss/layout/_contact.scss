@@ -2,38 +2,19 @@
     background-color: $color-pink;
     padding: $space-m;
     
-    .heading-secondary--blue {
-        text-transform: uppercase;
-        color: $color-blue;
-        margin-bottom: $space-s;
-        font-size: $font-l;
-    }
 
     &__email {
         display: flex;
         align-items: center;
         margin: $space-m 0;
-        
-
     }
 
     &__icon {
         width: 40px;
         height: 40px;
         margin-right: $space-s;
-
     }
 
-    .paragraph--contact {
-        font-size: $font-s;
-
-        a:link,
-        a:visited {
-            color: $color-brown;
-            text-decoration: none;
-            
-        }
-    }
 }
 
 .form {

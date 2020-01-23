@@ -4,19 +4,21 @@
 	$color-brown: #585451;
 	$color-blue: #708d9f;
 	$color-gold: #d58f2b;
-	$color-pink: #f0e8e5;
+    $color-pink: #f0e8e5;
+    $color-pink-light: #fbf8f7;
     $color-light-brown: #b0a8a5;
     
+    
     //TYPOGRAPHY
-    $font-s: 1rem; //16px; 
-	$font-m: 1.4rem; //18px; 
-	$font-l: 2rem; //30px;
-    $font-xl: 3.4rem; //48px;
+    $font-s: 1.6rem; //16px; 
+	$font-m: 1.8rem; //18px; 
+	$font-l: 3rem; //30px;
+    $font-xl: 4.8rem; //48px;
     
     //SPACING
-    $space-s: 1rem;
-    $space-m: 2.1rem; //30px;
-	$space-xl: 6.4rem; //90px; 
+    $space-s: 1.6rem;
+    $space-m: 3rem; //30px;
+	$space-xl: 9rem; //90px; 
 
     //SCREEN WIDTH
     $max-width-grid: 1366px;

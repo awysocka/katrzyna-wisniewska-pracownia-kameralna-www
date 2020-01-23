@@ -56,12 +56,15 @@
     }
 
     .submit__button {
-        margin-left: auto;
-        padding: $font-s/2 $font-m ;
         color: $color-white;
         background-color: $color-blue;
-        font-size: $font-s;
+        font-size: $font-xs;
+        text-transform: uppercase;
         border: none;
+        margin-left: auto;
         margin-top: $space-s;
+        padding: $font-s/2 $font-l ;
+       
+        
     }
 }

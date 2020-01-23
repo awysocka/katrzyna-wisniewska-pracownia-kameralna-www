@@ -17,10 +17,10 @@
     }
 }
 
-.heading-secondary {
+.heading-secondary--orange {
     text-transform: uppercase;
     color: $color-gold;
-    font-size: $font-l;
+    font-size: $font-m;
     margin-bottom: $space-s;
 }
 
@@ -31,29 +31,28 @@
     margin-bottom: $space-s;
 }
 
-.paragraph--service {
+.paragraph {
+    font-size: $font-xs;
     margin: 0 auto;
-    max-width: 400px;
-    font-size: $font-s;
+    line-height: 1.4;
     color: $color-brown;
-    line-height: 1.2;
-    
+}
+
+.paragraph--service {
+    max-width: 400px;
 }
 
 .paragraph--about {
-    text-align: center;
-    margin: 0 auto;
     max-width: 730px;
-    font-size: $font-s;
+    text-align: justify;
 }
 
 .paragraph--contact {
-    font-size: $font-s;
+    margin: 0;
 
     a:link,
     a:visited {
         color: $color-brown;
         text-decoration: none;
-        
     }
 }

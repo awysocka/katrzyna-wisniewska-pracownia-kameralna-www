@@ -47,6 +47,14 @@
     text-align: justify;
 }
 
+.paragraph-social-media {
+    a:link,
+    a:visited {
+        color: $color-brown;
+        text-decoration: none;
+    }
+}
+
 .paragraph--contact {
     margin: 0;
 

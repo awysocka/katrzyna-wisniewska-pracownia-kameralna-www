@@ -13,9 +13,7 @@
     z-index: $z-index-navbar;
     
     &__content {
-        width: 100%;
-        max-width: 1366px;
-        margin: 0 auto;
+        @include content-width-limit;
         display: flex;
         justify-content: space-between;
 
@@ -87,7 +85,7 @@
 }
 
 .hamburger__inner {
-    @include hamburger__line;
+    @include hamburger-line;
 
     left: 0;
     top: 50%;
@@ -97,7 +95,7 @@
 
 .hamburger__inner::before,
 .hamburger__inner::after {
-    @include hamburger__line;
+    @include hamburger-line;
 
     content: "";
     left: 0;

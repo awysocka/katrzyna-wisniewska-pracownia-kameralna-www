@@ -29,6 +29,7 @@
     text-transform: uppercase;
     font-size: $font-l;
     margin-bottom: $space-s;
+    text-align: center;
 }
 
 .paragraph {
@@ -43,16 +44,21 @@
 }
 
 .paragraph--about {
-    max-width: 730px;
+    max-width: 630px;
     text-align: justify;
+    margin: 0;
 }
 
-.paragraph-social-media {
+.paragraph--social-media {
     a:link,
     a:visited {
         color: $color-brown;
         text-decoration: none;
     }
+}
+
+.paragraph--follow-me {
+    margin: 0;
 }
 
 .paragraph--contact {
@@ -64,3 +70,6 @@
         text-decoration: none;
     }
 }
+
+//MEDIA QUERIES 
+

@@ -4,7 +4,11 @@
     font-size: 12px;
     text-align: left;
     line-height: 1.4;
-    padding:$space-s $space-m;
+    padding:$space-s;
+
+    &__container {
+        @include content-width-limit;
+    }
 
     a:link,
     a:visited {

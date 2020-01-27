@@ -40,7 +40,7 @@
 }
 
 .paragraph--service {
-    max-width: 400px;
+    max-width: 315px;
 }
 
 .paragraph--about {
@@ -71,5 +71,28 @@
     }
 }
 
-//MEDIA QUERIES 
+
+//MEDIA QUERIES
+
+@include respond(tab-land) {
+    .heading-secondary--orange {
+        font-size: $font-l;
+    }
+
+    .paragraph {
+        font-size: $font-s;
+    }
+
+    .heading-primary {
+    
+        .subslogan {
+            font-size: $font-l;
+        }
+    
+        .slogan {
+            font-size: $font-xl;
+        }
+    }
+
+}
 

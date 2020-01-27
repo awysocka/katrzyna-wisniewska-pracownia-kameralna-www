@@ -10,11 +10,34 @@
         text-align: center;
         list-style-type: none;
         margin-top: $space-m;
+        @include content-width-limit;
     }
 
     &__img {
-        width: 70vw;
+        width: 70%;
         max-width: 550px;
         margin: $space-m 0;
     }
 }
+
+@include respond(tab-port) {
+
+    @supports (display: grid) {
+
+        .service {  
+
+            &__list {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: $space-s;
+                align-items: baseline; 
+            }
+
+            &__img {
+                width: 100%;
+            }
+        }  
+    }
+}
+
+

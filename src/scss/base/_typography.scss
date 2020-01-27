@@ -74,6 +74,12 @@
 
 //MEDIA QUERIES
 
+@include respond(tab-port) {
+    .heading-secondary--blue {
+        text-align: start;
+    }
+}
+
 @include respond(tab-land) {
     .heading-secondary--orange {
         font-size: $font-l;
@@ -93,6 +99,13 @@
             font-size: $font-xl;
         }
     }
+
+    .paragraph--about {
+        max-width: 100%;
+        text-align: justify;
+        margin: 0;
+    }
+
 
 }
 

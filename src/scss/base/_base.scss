@@ -23,3 +23,12 @@ body {
     margin-top: 80px;
     overflow-x: hidden;
 }
+
+
+//MEDIA QUERIES
+@include respond(tab-land) {
+    .content {
+        padding: $space-m;
+    }
+ 
+}

@@ -1,6 +1,6 @@
 .about {
     @include content-width-limit;
-    margin-top: $space-m;
+    padding-top: $space-m;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,6 +22,7 @@
             grid-template-columns: 1fr 2fr;
             grid-gap: $space-s;
             align-items: center;
+            padding-top: $space-m*2;
 
             &__img {
                 width: 100%;
@@ -36,7 +37,7 @@
     @supports (display: grid) {
 
         .about {
-            margin-top: $space-xl;
+            padding-top: $space-xl;
             grid-gap: $space-m;
         }
     }

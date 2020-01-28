@@ -2,7 +2,7 @@
 
 .header {
     width: 100vw;
-    height: 90px;
+    height: 65px;
     background-color: $color-black;
     position: fixed;
     top: 0;
@@ -19,7 +19,7 @@
         align-items: center;
 
         .logo {
-            width: 12rem;
+            width: 11rem;
         }
     }
 }
@@ -28,7 +28,7 @@
     height: 100%;
     width: 250px;
     position: fixed;
-    top: 90px;
+    top: 65px;
     right: 0;  
     background-color: $color-pink;
     transform: translateX(250px);
@@ -135,15 +135,10 @@
         }
 
         .header {
-
-            height: 100px;
+            height: 75px;
 
             &__content {
                 align-items: flex-end;
-    
-                .logo {
-                    width: 14rem;
-                }
             }
         }
 
@@ -152,7 +147,7 @@
             width: 60%;
             max-width: 400px;
             position: inherit;
-            top: 90px;
+            top: 75px;
             right: 0;  
             background-color: transparent;
             transform: translateX(0px);
@@ -168,24 +163,40 @@
                 margin: 0;
             }
 
+
             &__link {
                 color: $color-white;
-                font-size: $font-m;
+                font-size: $font-m;  
             }
+
+            &__link--current {
+                color: $color-gold;
+                transition: .2 ease;
+            }
+        
+            &__link:hover {
+                color: $color-gold;
+                transition: .2s ease;
+            }
+
         }
     }
 }
 
 @include respond(tab-land) {
     .header {
+        height: 85px;
         padding: 0 $space-m;
 
         &__content {
 
             .logo {
-                width: 16rem;
+                width: 15rem;
             }
         }
     } 
-}
 
+    .nav {
+        top: 85px;
+    }
+}

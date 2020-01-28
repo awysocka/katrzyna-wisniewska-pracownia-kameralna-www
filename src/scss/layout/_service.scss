@@ -1,6 +1,6 @@
 //SERVICE
 .service {
-    margin-top: $space-m*2;
+    padding-top: $space-m*2;
 
     &__list {
         display: flex;
@@ -24,7 +24,7 @@
 
     @supports (display: grid) {
 
-        .service {  
+        .service {
 
             &__list {
                 display: grid;
@@ -38,6 +38,12 @@
                 max-width: 100%;
             }
         }  
+    }
+}
+
+@include respond(tab-land) {
+    .service {
+        padding-top: $space-xl;  
     }
 }
 

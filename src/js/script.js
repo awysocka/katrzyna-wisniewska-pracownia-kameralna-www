@@ -23,3 +23,25 @@ for (let navLink of navLinks) {
   navLink.onclick = closeMenu;
 }
 
+// ---HIGHLIGHT MENU ITEM ON SCROLL---
+
+const mainNavLinks = document.getElementsByClassName("nav__link");
+const windowHeight = window.innerHeight;
+
+window.onscroll = function() {
+  const fromTop = window.scrollY + windowHeight / 2;
+
+  for(let link of mainNavLinks) {
+    const section = document.querySelector(link.hash);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("nav__link--current");
+    } else {
+      link.classList.remove("nav__link--current");
+    }
+  };
+};
+

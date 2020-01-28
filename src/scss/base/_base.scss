@@ -20,14 +20,22 @@ body {
 
 .content {
     padding: $space-s;
-    margin-top: 80px;
+    margin-top: 65px;
     overflow-x: hidden;
 }
 
 
 //MEDIA QUERIES
+
+@include respond(tab-port) {
+    .content {
+        margin-top: 75px;
+    }
+}
+
 @include respond(tab-land) {
     .content {
+        margin-top: 85px;
         padding: $space-m;
     }
  

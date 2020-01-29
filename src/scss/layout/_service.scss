@@ -62,10 +62,6 @@
                 }
             }
 
-            &__img {
-                width: 100%;
-                max-width: 100%;
-            }
         }  
     }
 }
@@ -73,6 +69,15 @@
 @include respond(tab-land) {
     .service {
         padding-top: $space-xl;  
+    }
+}
+
+@include respond(desktop) {
+    .service {
+    
+        &__img {
+            width: 100%;
+        }
     }
 }
 

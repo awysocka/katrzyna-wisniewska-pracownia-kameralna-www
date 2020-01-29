@@ -26,11 +26,9 @@
     } 
 
 }
-
    
 @include respond(tab-port) {
     .social-media {
-        // margin: $space-m auto;
         padding-top: $space-xl;
         display: flex;
         justify-content: space-between;

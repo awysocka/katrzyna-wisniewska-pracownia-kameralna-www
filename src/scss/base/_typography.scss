@@ -87,7 +87,7 @@
 
 @include respond(tab-land) {
     .heading-secondary--orange {
-        font-size: $font-l;
+        font-size: $font-xs*2;
     }
 
     .paragraph {

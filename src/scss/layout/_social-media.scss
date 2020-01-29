@@ -1,8 +1,8 @@
 .social-media {
     @include content-width-limit;
+    padding-top: $space-m*2;
 
     &__container {
-        margin-top: $space-m;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -30,10 +30,10 @@
    
 @include respond(tab-port) {
     .social-media {
-        margin: $space-m auto;
+        // margin: $space-m auto;
+        padding-top: $space-xl;
         display: flex;
         justify-content: space-between;
-        // align-items: flex-start;
 
         &__container {
             margin-top: 0;
@@ -53,5 +53,6 @@
         }
     }  
 }
+
 
 

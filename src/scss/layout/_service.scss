@@ -29,6 +29,10 @@
 
         .service {
 
+            .heading-secondary--blue {
+                text-align: center;
+            }
+
             &__list {
                 margin-top: $space-m;
                 display: grid;

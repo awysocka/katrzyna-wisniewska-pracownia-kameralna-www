@@ -4,12 +4,13 @@
     margin-top: $space-m;
 
     &__container {
+        @include content-width-limit;
         display: flex;
         justify-content: center;
+        
     }
 
     &__img {
-        width: 100%;
-        @include content-width-limit;
+        width: 80%;
     }
 }

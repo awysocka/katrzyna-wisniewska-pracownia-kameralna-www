@@ -29,7 +29,6 @@
    
 @include respond(tab-port) {
     .social-media {
-        padding-top: $space-xl;
         display: flex;
         justify-content: space-between;
 
@@ -50,6 +49,13 @@
             align-items: center;
         }
     }  
+}
+
+@include respond(tab-land) {
+    .social-media {
+        padding-top: $space-xl;
+    }
+
 }
 
 

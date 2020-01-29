@@ -1,6 +1,6 @@
 .about {
     @include content-width-limit;
-    padding-top: $space-m;
+    padding-top: $space-m*2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,7 +8,7 @@
     &__img {
         width: 70%;
         max-width: 350px;
-        margin: $space-m 0;
+        margin-bottom: $space-m;
     }
 }
 
@@ -27,6 +27,7 @@
             &__img {
                 width: 100%;
                 max-width: 100%;
+                margin: 0;
             }
         }
     }

@@ -96,9 +96,3 @@
     }
 }
 
-@include respond(tab-land) {
-    .contact {
-        padding: $space-xl $space-m $space-m*2 $space-m;
-    }
-    
-}

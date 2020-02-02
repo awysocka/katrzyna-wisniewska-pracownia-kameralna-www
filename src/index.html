@@ -116,7 +116,7 @@
     </main>
     <footer>
         <section class="contact" id="contact"> 
-            <div class="contact__container">
+            <div class="contact__container" id="form-container">
                 <div class="contact__text">
                     <h2 class="heading-secondary--blue">kontakt</h2>
                     <div class="contact__question">
@@ -129,17 +129,18 @@
                         <p class="paragraph paragraph--contact"><a href="mailto:kameralna.pracownia@gmail.com">kameralna.pracownia@gmail.com</a></p>
                     </div> 
                 </div>
-                <form class="form">
+                <form class="form" action="mail.php" method="POST" id="contact-form">
                     <ul class="form__list">
                         <li class="form__item">
                             <label class="form__label" for="email">email</label>
-                            <input class="form__email" type="email" id="email" name="user__email">
+                            <input class="form__email" type="email" id="email" name="email" required>
                         </li>
                         <li class="form__item">
-                            <label class="form__label" for="textarea">napisz wiadomość</label>
-                            <textarea class="textarea" cols="30" rows="10" id="textarea" name="user__message"></textarea>
+                            <label class="form__label" for="message">napisz wiadomość</label>
+                            <textarea class="textarea" cols="30" rows="10" id="message" name="message" required></textarea>
                         </li>
-                        <li class="form__item">
+                        <li class="form__item form__item--submit">
+                            <p class="submit__result" id="submit-result"></p>
                             <button class="submit__button" type="submit">wyślij</button>
                         </li>
                     </ul>

@@ -19,7 +19,7 @@
     "build:js": "mkdirp dist/js && npm run babel && npm run jsmin",
     "build": "npm run clean && npm run build:css && npm run build:js && npm run cp && echo Finished successfully!",
     "watch:css": "node-sass src/scss/main.scss dist/css/style.css -w",
-    "live": "cd src && live-server --browser=chrome --mount=/css:../dist/css",
+    "live": "cd src && live-server --browser=chrome --mount=/css:../dist/css --proxy=mail.php:http://anna.you2.pl/mail.php",
     "dev": "npm-run-all --parallel scss watch:css live"
   },
   "repository": {

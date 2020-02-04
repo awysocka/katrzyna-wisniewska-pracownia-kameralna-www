@@ -1,6 +1,6 @@
 //SERVICE
 .service {
-    padding-top: $space-m*2;
+    @include section-space-top;
 
     &__list {
         display: flex;

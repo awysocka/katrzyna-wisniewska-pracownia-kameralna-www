@@ -1,6 +1,6 @@
 .contact{
     background-color: $color-pink;
-    padding: $space-m*2 $space-s;
+    padding: $space-m $space-s;
 
     &__container {
        @include content-width-limit;

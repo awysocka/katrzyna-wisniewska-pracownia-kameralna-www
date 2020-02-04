@@ -56,8 +56,8 @@ window.onscroll = function () {
 
 function smoothScroll(event) {
   event.preventDefault();
-  const targetID = event.target.getAttribute('href');
-  const targetPosition = targetID === null ? 0 : document.querySelector(targetID).offsetTop - 60;
+  let targetID = event.target.getAttribute('href') || event.currentTarget.getAttribute('href');
+  const targetPosition = document.querySelector(targetID).offsetTop - 60;
   const startPosition = window.pageYOffset;
   const distance = targetPosition - startPosition;
   const duration = 500;
@@ -78,6 +78,10 @@ function smoothScroll(event) {
 function easeOutQuad(progress) {
   return -progress * (progress - 2);
 }
+
+const heroScrollButton = document.getElementById('hero-scroll-button');
+heroScrollButton.onclick = smoothScroll;
+
 
 
 // ---FORM---

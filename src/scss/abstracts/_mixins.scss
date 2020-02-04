@@ -12,6 +12,10 @@
     margin: 0 auto;
 }
 
+@mixin section-space-top {
+    padding-top: $space-m;
+}
+
 //MEDIA QUERIES
 
 @mixin respond($breakpoints) {

@@ -83,7 +83,19 @@
     .heading-secondary--blue {
         text-align: start;
     }
+
+    .heading-primary {
+
+        .subslogan {
+            font-size: $font-l;
+        }
+    
+        .slogan {
+            font-size: $font-xl;
+        }
+    }
 }
+
 
 @include respond(tab-land) {
     .heading-secondary--orange {

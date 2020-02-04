@@ -45,7 +45,7 @@
 <body>
     <header class="header">
         <div class="header__content">
-            <a href="#" id="logo"><img src="img/logo.png" class="logo" alt="logo pracownia kameralna"></a>
+            <a href="#hero" id="logo"><img src="img/logo.png" class="logo" alt="logo pracownia kameralna"></a>
             <button class="hamburger" id="hamburger" aria-label="menu">
                 <span class="hamburger__box">
                     <span class="hamburger__inner"></span>
@@ -70,10 +70,20 @@
         </div>    
     </header>
     <div class="nav__overlay"></div>
-    <main class="content">
-        <section class="hero">
+    <section class="hero" id="hero">
+        <div class="hero__img"></div>
+        <h1 class="heading-primary hero__text">
+            <span class="subslogan">projektuję, ilustruję, fotografuję</span>
+            <span class="slogan">Tworzę dla Ciebie i Twojej firmy</span>
+        </h1>
+        <a href="#service" id="hero-scroll-button"><img src="img/arrow.png" class="hero__scroll-button" ></a>
+
+    </section>
+    
+    <main class="content" id="content">
+        <!-- <section class="hero">
             <div class="hero__container">
-                <img src="img/pracownia kameralna.png" class="hero__img" alt="zdjęcie z logiem">
+                <img src="img/pracownia_kameralna.jpg" class="hero__img" alt="zdjęcie z logiem">
             </div>
             <div class="hero__text">
                 <h1 class="heading-primary">
@@ -81,9 +91,9 @@
                     <span class="slogan">Tworzę dla Ciebie i Twojej firmy</span>
                 </h1>
             </div>
-        </section>
+        </section> -->
         <section class="service" id="service">
-            <h2 class="heading-secondary--blue">oferta</h2>
+            <!-- <h2 class="heading-secondary--blue">oferta</h2> -->
             <ul class="service__list">
                 <li class="service__item print">
                     <img src="img/print.png" class="service__img">

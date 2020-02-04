@@ -1,6 +1,6 @@
 .about {
     @include content-width-limit;
-    padding-top: $space-m*2;
+    @include section-space-top;
     display: flex;
     flex-direction: column;
     align-items: center;

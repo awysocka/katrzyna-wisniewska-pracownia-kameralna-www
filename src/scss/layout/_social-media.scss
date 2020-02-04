@@ -1,6 +1,6 @@
 .social-media {
     @include content-width-limit;
-    padding-top: $space-m*2;
+    @include section-space-top;
 
     &__container {
         display: flex;
@@ -29,6 +29,7 @@
    
 @include respond(tab-port) {
     .social-media {
+        padding-top: $space-m*2;
         display: flex;
         justify-content: space-between;
 

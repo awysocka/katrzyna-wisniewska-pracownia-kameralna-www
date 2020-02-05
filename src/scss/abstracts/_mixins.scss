@@ -16,11 +16,12 @@
     padding-top: $space-m;
 }
 
+
 //MEDIA QUERIES
 
 @mixin respond($breakpoints) {
     @if $breakpoints == tab-port {
-        @media screen and (min-width: 768px) {@content}
+        @media screen and (min-width: 600px) {@content}
     };
 
     @if $breakpoints == tab-land {
@@ -32,3 +33,5 @@
     }
 
 }
+
+

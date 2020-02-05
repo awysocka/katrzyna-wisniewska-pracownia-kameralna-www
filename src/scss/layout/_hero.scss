@@ -1,49 +1,24 @@
 //HERO
 
-// .hero {
-//     margin-top: $space-m;
-
-//     &__container {
-//         @include content-width-limit;
-//         display: flex;
-//         justify-content: center;
-        
-//     }
-
-//     &__img {
-//         width: 80%;
-//     }
-// }
-
-//desktop
-// .hero {
-//     height: 768px;
-//     margin-top: 85px;
-//     background-image: url(/img/pracownia_kameralna.jpg);
-//     background-size: cover;
-//     background-position: center bottom;
-//     background-repeat: no-repeat;
-    
-    
-// }
-
 .hero {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     background-color: #f0e8e5;
+    box-shadow: 5px 2px 2px #b5b5b5;
 
     &__img {
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        margin-top: 60px;
         width: 100vw;
         height: 63vw;
         background-image: url(/img/pracownia_kameralna_mobile.jpg);
         background-size: contain;
         background-position: center top;
         background-repeat: no-repeat;
+        margin-top: 55px;
     }
 
     &__text {
@@ -51,39 +26,48 @@
     }
 
     &__scroll-button {
-       margin-bottom: -3rem;
-       display: none;
+        display: none;
+        width: 50px;
+        height: 50px;
+        margin-bottom: -2rem;
     }
-
 }
 
 // MEDIA QUERIES
 
 @include respond(tab-port) {
     .hero {
+
+        &__img {
+            margin-top: 60px;
+        }
+
         &__text {
-            padding: 0 $space-m $space-m;
+            padding: 0 $space-m;
         }
     }
 }
 
 @include respond(tab-land) {
     .hero {
-       &__img {
-        margin-top: 80px;
-        background-image: url(/img/pracownia_kameralna.jpg);
-        width: 100vw;
-        height: 35vw;
-       }
+        &__scroll-button {
+            display: block;
+        }
+
+        &__img {
+            background-image: url(/img/pracownia_kameralna_hero_land.jpg);
+            width: 100vw;
+            height: 30vw;
+        }
     }
 }
 
 @include respond(desktop) {
     .hero {
-       &__scroll-button {
-        display: block;
-     }
+        &__img {
+            background-image: url(/img/pracownia_kameralna_hero.jpg);
+            width: 100vw;
+            height: 35vw;
+        }
     }
 }
-
-

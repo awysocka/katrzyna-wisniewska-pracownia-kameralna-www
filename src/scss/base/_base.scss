@@ -15,27 +15,18 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     background-color: $color-white;
+    overflow-x: hidden;
 }
 
 .content {
-    padding: $space-s;
-    // margin-top: 65px;
-    overflow-x: hidden;
+    padding: $space-s $space-s 0;
 }
 
 
 //MEDIA QUERIES
 
-@include respond(tab-port) {
-    .content {
-        // margin-top: 75px;
-    }
-}
-
 @include respond(tab-land) {
     .content {
-        // margin-top: 85px;
-        padding: $space-m;
+        padding: $space-m $space-m 0;
     }
- 
 }

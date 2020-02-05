@@ -9,7 +9,6 @@
         justify-content: space-between;
         text-align: center;
         list-style-type: none;
-        margin-top: $space-m;
         @include content-width-limit;
     }
 
@@ -19,7 +18,7 @@
 
     &__img {
         width: 70%;
-        max-width: 550px;
+        max-width: 500px;
     }
 }
 
@@ -28,13 +27,13 @@
     @supports (display: grid) {
 
         .service {
+            padding-top: $space-m*2;
 
             .heading-secondary--blue {
                 text-align: center;
             }
 
             &__list {
-                margin-top: $space-m;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr;
@@ -61,24 +60,21 @@
                     grid-row: 2/-1;
                 }
             }
-
-        }  
+        }
     }
 }
 
 @include respond(tab-land) {
     .service {
-        padding-top: $space-xl;  
+        padding-top: $space-xl;
     }
 }
 
 @include respond(desktop) {
     .service {
-    
+
         &__img {
             width: 100%;
         }
     }
 }
-
-

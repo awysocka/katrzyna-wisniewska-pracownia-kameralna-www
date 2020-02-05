@@ -1,17 +1,16 @@
-
 .heading-primary {
     text-align: center;
     margin: $space-s 0;
 
     .subslogan {
         display: block;
-        font-size: $font-m;
+        font-size: $font-s;
         font-weight: 400;
         color: $color-brown;
     }
 
     .slogan {
-        font-size: $font-l;
+        font-size: $font-m;
         color: $color-blue;
         text-transform: uppercase;
     }
@@ -55,6 +54,7 @@
 }
 
 .paragraph--social-media {
+
     a:link,
     a:visited {
         color: $color-brown;
@@ -85,17 +85,17 @@
     }
 
     .heading-primary {
+        margin: $space-s 0 $space-m;
 
         .subslogan {
-            font-size: $font-l;
+            font-size: $font-m;
         }
-    
+
         .slogan {
-            font-size: $font-xl;
+            font-size: $font-l;
         }
     }
 }
-
 
 @include respond(tab-land) {
     .heading-secondary--orange {
@@ -106,23 +106,24 @@
         font-size: $font-s;
     }
 
-    .heading-primary {
-    
-        .subslogan {
-            font-size: $font-l;
-        }
-    
-        .slogan {
-            font-size: $font-xl;
-        }
-    }
-
     .paragraph--about {
         max-width: 100%;
         text-align: justify;
         margin: 0;
     }
-
-
 }
 
+@include respond(desktop) {
+
+    .heading-primary {
+        margin: $space-s 0 $space-m*2;
+
+        .subslogan {
+            font-size: $font-l;
+        }
+
+        .slogan {
+            font-size: $font-xl;
+        }
+    }
+}

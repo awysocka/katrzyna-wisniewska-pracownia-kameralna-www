@@ -108,3 +108,14 @@
         }
     }
 }
+
+@include respond(tab-land) {
+
+    @supports (display: grid) {
+
+        .contact {
+            padding: $space-m;
+        
+        }
+    }
+}

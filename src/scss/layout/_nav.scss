@@ -11,7 +11,7 @@
     padding: 0 $space-s;
     overflow: hidden;
     z-index: $z-index-navbar;
-    
+
     &__content {
         @include content-width-limit;
         display: flex;
@@ -29,15 +29,15 @@
     width: 250px;
     position: fixed;
     top: 65px;
-    right: 0;  
+    right: 0;
     background-color: $color-pink;
     transform: translateX(250px);
-    transition: .5s ease; 
+    transition: .5s ease;
 
     &--active {
-        transform: translateX(0px);  
+        transform: translateX(0px);
     }
-        
+
     &__list {
         list-style-type: none;
         padding: 10px;
@@ -61,9 +61,9 @@
         height: 100%;
         position: fixed;
         top: 0;
-        background-color: rgba(102,102,102,.8);
+        background-color: rgba(102, 102, 102, .8);
         z-index: $z-index-background;
-        transition: 1s ease; 
+        transition: 1s ease;
     }
 }
 
@@ -78,7 +78,7 @@
 }
 
 .hamburger__box {
-    width: 40px;
+    width: 30px;
     height: 30px;
     display: inline-block;
     position: relative;
@@ -135,7 +135,6 @@
         }
 
         .header {
-            height: 75px;
 
             &__content {
                 align-items: flex-end;
@@ -147,8 +146,7 @@
             width: 60%;
             max-width: 400px;
             position: inherit;
-            top: 75px;
-            right: 0;  
+            right: 0;
             background-color: transparent;
             transform: translateX(0px);
 
@@ -163,40 +161,33 @@
                 margin: 0;
             }
 
-
             &__link {
                 color: $color-white;
-                font-size: $font-m;  
+                font-size: $font-m;
             }
 
             &__link--current {
                 color: $color-gold;
                 transition: .2 ease;
             }
-        
+
             &__link:hover {
                 color: $color-gold;
                 transition: .2s ease;
             }
-
         }
     }
 }
 
 @include respond(tab-land) {
     .header {
-        height: 85px;
         padding: 0 $space-m;
 
         &__content {
 
             .logo {
-                width: 15rem;
+                width: 12rem;
             }
         }
-    } 
-
-    .nav {
-        top: 85px;
     }
 }

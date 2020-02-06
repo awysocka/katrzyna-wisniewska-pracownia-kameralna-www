@@ -16,3 +16,41 @@
         text-decoration: none;
     }
 }
+
+.cookies-consent {
+    display: none;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid $color-gold;
+    background-color: rgba($color-white, .8);
+    padding: $space-s;
+    font-size: $font-xs;
+    z-index: $z-index-cookies-consent;
+    
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            text-align: center;
+            color: $color-brown;
+            margin: $space-s/2;
+        }
+    }
+
+    &__accept {
+        color: $color-brown;
+        border: 1px solid $color-pink;
+        background-color: $color-pink;
+        cursor: pointer;
+        padding: .5rem 1rem;
+    }
+}
+
+.cookies-consent--active {
+    display: block;
+}

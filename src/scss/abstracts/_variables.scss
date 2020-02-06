@@ -25,6 +25,8 @@
     $max-width-grid: 1366px;
 
     //Z-INDEX
-    $z-index-navbar: 1100;
-    $z-index-menu: 1050;
-    $z-index-background: 1000;
+    $z-index-max: 2147483647;
+    $z-index-cookies-consent: $z-index-max;
+    $z-index-navbar: $z-index-max;
+    $z-index-menu: $z-index-max;
+    $z-index-background: 100000;

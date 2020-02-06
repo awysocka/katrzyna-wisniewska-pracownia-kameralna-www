@@ -128,3 +128,20 @@ contactForm.onsubmit = function (e) {
       console.error('błąd: ', error);
     });
 };
+
+
+// ---COOKIES---
+
+const cookiesConsentBanner = document.getElementById('cookies-consent');
+const acceptCookiesButton = document.getElementById('accept-button');
+
+
+acceptCookiesButton.onclick = function () {
+  cookiesConsentBanner.classList.remove('cookies-consent--active');
+
+  document.cookie = "cookies_accepted = true"; 
+};
+
+if (document.cookie.replace(/(?:(?:^|.*;\s*)cookies_accepted\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
+  cookiesConsentBanner.classList.add('cookies-consent--active');
+} 

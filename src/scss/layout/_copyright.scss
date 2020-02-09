@@ -22,10 +22,10 @@
     width: 100%;
     position: fixed;
     bottom: 0;
-    border-top: 1px solid $color-gold;
     background-color: rgba($color-white, .8);
-    padding: $space-s;
+    border-top: 1px solid $color-gold;
     font-size: $font-xs;
+    padding: $space-s;
     z-index: $z-index-cookies-consent;
     
 
@@ -44,8 +44,8 @@
 
     &__accept {
         color: $color-brown;
-        border: 1px solid $color-pink;
         background-color: $color-pink;
+        border: 1px solid $color-pink;
         cursor: pointer;
         padding: .5rem 1rem;
     }

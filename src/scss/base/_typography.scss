@@ -48,7 +48,7 @@
 }
 
 .paragraph--about {
-    max-width: 630px;
+    max-width: 1080px;
     text-align: justify;
     margin: 0;
 }
@@ -79,6 +79,7 @@
 
 //MEDIA QUERIES
 
+
 @include respond(tab-port) {
     .heading-secondary--blue {
         text-align: start;
@@ -98,18 +99,20 @@
 }
 
 @include respond(tab-land) {
-    .heading-secondary--orange {
-        font-size: $font-xs*2;
-    }
 
-    .paragraph {
-        font-size: $font-s;
-    }
+    @supports (display: grid) {
+        .heading-secondary--orange {
+            font-size: $font-xs*2;
+        }
 
-    .paragraph--about {
-        max-width: 100%;
-        text-align: justify;
-        margin: 0;
+        .paragraph {
+            font-size: $font-s;
+        }
+
+        .paragraph--about {
+            text-align: justify;
+            margin: 0;
+        }
     }
 }
 

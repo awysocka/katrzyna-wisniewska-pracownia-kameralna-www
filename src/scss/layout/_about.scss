@@ -35,11 +35,8 @@
 
 @include respond(tab-land) {
 
-    @supports (display: grid) {
-
-        .about {
-            padding-top: $space-xl;
-            grid-gap: $space-m;
-        }
+    .about {
+        padding-top: $space-xl;
+        grid-gap: $space-m;
     }
 }

@@ -9,11 +9,11 @@
     box-shadow: 5px 2px 2px #b5b5b5;
 
     &__img {
+        width: 100vw;
+        height: 63vw;
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        width: 100vw;
-        height: 63vw;
         background-image: url(/img/pracownia_kameralna_mobile.jpg);
         background-size: contain;
         background-position: center top;
@@ -26,9 +26,9 @@
     }
 
     &__scroll-button {
-        display: none;
         width: 50px;
         height: 50px;
+        display: none;
         margin-bottom: -2rem;
     }
 }
@@ -55,9 +55,9 @@
         }
 
         &__img {
-            background-image: url(/img/pracownia_kameralna_hero_land.jpg);
             width: 100vw;
             height: 30vw;
+            background-image: url(/img/pracownia_kameralna_hero_land.jpg);
         }
     }
 }
@@ -65,9 +65,9 @@
 @include respond(desktop) {
     .hero {
         &__img {
-            background-image: url(/img/pracownia_kameralna_hero.jpg);
             width: 100vw;
             height: 35vw;
+            background-image: url(/img/pracownia_kameralna_hero.jpg);
         }
     }
 }

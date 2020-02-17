@@ -130,6 +130,21 @@ contactForm.onsubmit = function (e) {
 };
 
 
+// ---OPEN FORM AGREEMENT---
+
+const agreementMoreButton = document.getElementById('agreement-more-button');
+const agreementFullText = document.getElementById('form-agreement-more-text');
+
+agreementMoreButton.onclick = () => {
+  agreementFullText.classList.toggle('form-agreement__more-text--open');
+
+  if (agreementFullText.classList.contains('form-agreement__more-text--open')) {
+    agreementMoreButton.innerText = 'mniej';
+  } else {
+    agreementMoreButton.innerText = 'więcej';
+  }
+};
+
 // ---COOKIES---
 
 const cookiesConsentBanner = document.getElementById('cookies-consent');

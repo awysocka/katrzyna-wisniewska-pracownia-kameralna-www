@@ -45,6 +45,27 @@
         margin-bottom: $space-s;
     }
 
+    .form-agreement {
+        font-size: 1.2rem;
+
+        &__more-text {
+            display: none;
+
+            &--open {
+                display: inline;
+            }
+        }
+
+        &__more-button {
+            color: $color-gold;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
     .form__label {
         width: 100%;
         font-size: 1.4rem;
@@ -72,6 +93,7 @@
         background-color: $color-blue;
         font-size: $font-xs;
         text-transform: uppercase;
+        cursor: pointer;
         border: none;
         margin-left: auto;
         padding: $font-s/2 $font-l ;    
@@ -83,7 +105,7 @@
     flex-direction: row;
     align-items: center;
     font-weight: 700; 
-    margin-top: $space-s*2;
+    margin-top: $space-s;
     
     .submit__result {
         color: #0e8442;
@@ -96,6 +118,7 @@
         color: #d52e2a;
     }
 }
+
 
 //MEDIA QUERIES
 

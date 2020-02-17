@@ -19,7 +19,7 @@ const closeMenu = function () {
   smoothScroll(event);
 
   hamburgerIcon.classList.remove('hamburger--active');
-  nav.classList.remove('nav--active');
+  nav.classList.remove('nav--active')
   navOpen.classList.remove('nav__overlay--active');
 };
 
@@ -139,9 +139,9 @@ const acceptCookiesButton = document.getElementById('accept-button');
 acceptCookiesButton.onclick = function () {
   cookiesConsentBanner.classList.remove('cookies-consent--active');
 
-  document.cookie = "cookies_accepted = true"; 
+  document.cookie = "cookies_accepted = true";
 };
 
 if (document.cookie.replace(/(?:(?:^|.*;\s*)cookies_accepted\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
   cookiesConsentBanner.classList.add('cookies-consent--active');
-} 
+}

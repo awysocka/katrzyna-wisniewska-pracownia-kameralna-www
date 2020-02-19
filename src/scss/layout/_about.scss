@@ -10,6 +10,11 @@
         max-width: 350px;
         margin-bottom: $space-m;
     }
+
+    &__link {
+        color: $color-blue;
+        text-decoration: none;
+    }
 }
 
 

@@ -7,7 +7,7 @@ const navLogo = document.getElementById('logo');
 const navOpen = document.querySelector('.nav__overlay');
 
 // open and close mobile menu after 'click' on hamburger
-hamburgerIcon.onclick = function () {
+hamburgerIcon.onclick = () => {
   hamburgerIcon.classList.toggle('hamburger--active');
   nav.classList.toggle('nav--active');
   navOpen.classList.toggle('nav__overlay--active');
@@ -15,7 +15,7 @@ hamburgerIcon.onclick = function () {
 
 
 // close mobile menu after 'click' on menu link
-const closeMenu = function () {
+const closeMenu = () => {
   smoothScroll(event);
 
   hamburgerIcon.classList.remove('hamburger--active');
@@ -35,8 +35,9 @@ navLogo.onclick = closeMenu;
 const mainNavLinks = document.getElementsByClassName('nav__link');
 const windowHeight = window.innerHeight;
 
-window.onscroll = function () {
-  const fromTop = window.scrollY + windowHeight / 2;
+window.onscroll = () => {
+  
+  const fromTop = window.scrollY + windowHeight * 0.5;
 
   for (let link of mainNavLinks) {
     const section = document.querySelector(link.hash);
@@ -54,7 +55,7 @@ window.onscroll = function () {
 
 // ---SCROLL MENU---
 
-function smoothScroll(event) {
+const smoothScroll = event => {
   event.preventDefault();
   let targetID = event.target.getAttribute('href') || event.currentTarget.getAttribute('href');
   const targetPosition = document.querySelector(targetID).offsetTop - 60;
@@ -63,21 +64,21 @@ function smoothScroll(event) {
   const duration = 500;
   let start = null;
 
-  window.requestAnimationFrame(step);
-
-  function step(timestamp) {
+  const step = timestamp => {
     if (!start) start = timestamp;
     const runtime = timestamp - start;
     const progress = Math.min(runtime / duration, 1);
     const ease = easeOutQuad(progress);
     window.scrollTo(0, startPosition + (distance * ease));
     if (runtime < duration) window.requestAnimationFrame(step);
-  }
-}
+  };
 
-function easeOutQuad(progress) {
+  window.requestAnimationFrame(step);
+};
+
+const easeOutQuad = progress => {
   return -progress * (progress - 2);
-}
+};
 
 const heroScrollButton = document.getElementById('hero-scroll-button');
 heroScrollButton.onclick = smoothScroll;
@@ -89,7 +90,7 @@ heroScrollButton.onclick = smoothScroll;
 const submitResultElement = document.getElementById('submit-result');
 const contactForm = document.getElementById('contact-form');
 
-contactForm.onsubmit = function (e) {
+contactForm.onsubmit = e => {
   e.preventDefault();
 
   const email = document.getElementById('email').value;
@@ -114,9 +115,9 @@ contactForm.onsubmit = function (e) {
         submitResultElement.classList.remove('submit__result--error');
         submitResultElement.innerText = 'Wiadomość została wysłana.';
         contactForm.reset();
-        setTimeout(function () {
+        setTimeout(() => {
           submitResultElement.innerText = '';
-        }, 5000);
+        }, 10000);
       } else {
         submitResultElement.classList.add('submit__result--error');
         submitResultElement.innerText = 'Nie udało się wysłać wiadomości. Spróbuj jeszcze raz.';
@@ -151,7 +152,7 @@ const cookiesConsentBanner = document.getElementById('cookies-consent');
 const acceptCookiesButton = document.getElementById('accept-button');
 
 
-acceptCookiesButton.onclick = function () {
+acceptCookiesButton.onclick = () => {
   cookiesConsentBanner.classList.remove('cookies-consent--active');
 
   document.cookie = "cookies_accepted = true";

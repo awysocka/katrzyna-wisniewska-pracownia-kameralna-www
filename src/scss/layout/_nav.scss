@@ -169,7 +169,14 @@
             transition: .2 ease;
         }
 
-        &__link:hover {
+        // &__link:hover {
+        //     color: $color-gold;
+        //     transition: .2s ease;
+        // }
+    }
+
+    @include respond(touch-device) {
+        .nav__link:hover {
             color: $color-gold;
             transition: .2s ease;
         }

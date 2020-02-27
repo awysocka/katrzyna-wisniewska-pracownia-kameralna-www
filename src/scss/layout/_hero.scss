@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #f0e8e5;
-    box-shadow: 5px 2px 2px #b5b5b5;
+    box-shadow: 0px 2px 2px 0px #b5b5b5;
 
     &__img {
         width: 100vw;
@@ -37,6 +37,9 @@
 
 @include respond(tab-port) {
     .hero {
+        &__scroll-button {
+            display: block;
+        }
 
         &__img {
             margin-top: 60px;
@@ -50,10 +53,7 @@
 
 @include respond(tab-land) {
     .hero {
-        &__scroll-button {
-            display: block;
-        }
-
+       
         &__img {
             width: 100vw;
             height: 30vw;

@@ -25,6 +25,29 @@
         margin-bottom: $space-s/2;
     }
 
+    .instagram__box {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    @supports (display: grid) {
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-rows: repeat(auto, 200px);
+            grid-gap: $space-s;
+            padding-bottom: $space-m;
+
+            &__item {
+                display: block;
+                width: 100%;
+            }
+        }
+    } 
+    
+    .gallery__item {
+        max-width: 400px;
+    }
 }
 
 @include respond(tab-port) {
@@ -42,12 +65,6 @@
         &__item {
             text-align: center;
             padding: $space-s $space-s $space-s 0;
-        }
-
-        .insta {
-            width: 700px;
-            display: flex;
-            align-items: center;
         }
     }
 }

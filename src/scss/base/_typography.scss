@@ -96,6 +96,10 @@
             font-size: $font-l;
         }
     }
+
+    .paragraph--follow-me {
+        max-width: 330px;
+    }
 }
 
 @include respond(tab-land) {

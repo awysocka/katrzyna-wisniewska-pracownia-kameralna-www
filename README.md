@@ -6,7 +6,7 @@ Website for Katarzyna Wiśniewska graphic designer
 * css 3
 * sass
 * node-sass
-* vanilla js ES6
+* js(ES6)
 * [babel](https://babeljs.io/) 
 
 ## live

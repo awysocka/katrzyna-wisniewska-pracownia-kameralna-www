@@ -5,9 +5,9 @@ Website for Katarzyna Wiśniewska graphic designer
 * html 5
 * css 3
 * sass
-* node-sass
 * js(ES6)
-* [babel](https://babeljs.io/) 
+* babel
+* npm
 
 ## live
 * Here is a working website: https://pracowniakameralna.pl/.

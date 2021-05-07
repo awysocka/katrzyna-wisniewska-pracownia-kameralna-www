@@ -9,9 +9,6 @@ Website for Katarzyna Wiśniewska graphic designer
 * babel
 * npm
 
-## live
-* Here is a working website: https://pracowniakameralna.pl/.
-
 ## status
 * finished
 

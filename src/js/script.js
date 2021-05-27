@@ -15,7 +15,7 @@ hamburgerIcon.onclick = () => {
 
 
 // close mobile menu after 'click' on menu link
-const closeMenu = () => {
+const closeMenu = (event) => {
   smoothScroll(event);
 
   hamburgerIcon.classList.remove('hamburger--active');
